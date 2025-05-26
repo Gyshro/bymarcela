@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Essencial para mobile -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Marcela Correa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      min-height: 100vh;
+      background: url('fundo.png') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: auto;
+      margin: 0 auto 12px;
+      display: block;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #ffffff;
+    }
+
+    .verificado {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg') no-repeat center;
+      background-size: contain;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    .subtitulo {
+      margin: 5px 0 30px;
+      font-size: 15px;
+      color: #f0f0f0;
+    }
+
+    .card-link {
+      display: block;
+      margin: 14px auto;
+      max-width: 280px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      background-color: #000;
+    }
+
+    .card-link:hover {
+      transform: scale(1.02);
+    }
+
+    .card-link img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background: url('fundo.png') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .card-link {
+        max-width: 90%;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .subtitulo {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img class="profile-img" src="ig.png" alt="Foto de perfil">
+
+  <h1>Marcela Correa<span class="verificado"></span></h1>
+  <div class="subtitulo">Estrategista e Publicitária</div>
+
+  <a class="card-link" href="https://portfolioo-7gnuziezq-gyshros-projects.vercel.app/" target="_blank">
+    <img src="./1.png" alt="Portfólio">
+  </a>
+
+  <a class="card-link" href="https://api.whatsapp.com/send?phone=5527998273934" target="_blank">
+    <img src="./2.png" alt="Fale comigo no WhatsApp">
+  </a>
+
+  <a class="card-link" href="https://www.linkedin.com/in/marcela-correa-85497b1b3/" target="_blank">
+    <img src="./3.png" alt="LinkedIn">
+  </a>
+
+</body>
+</html>
